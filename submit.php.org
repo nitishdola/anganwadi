@@ -1,0 +1,31 @@
+<?php session_start(); ?>
+<?php include_once('conn.php'); ?>
+<?php if($_SESSION['is_login'] != true) { ?>
+	<script type="text/javascript">
+		window.location = "index.php";
+	</script>
+<?php } ?>
+<?php
+if($_POST) {
+	
+	$user_id = $_SESSION['id'];
+	
+	$sql = "INSERT INTO anganbadi values ('','$user_id', '".$_POST['visit_date']."','".$_POST['monitors_name']."','".$_POST['arrival_time']."',
+	'".$_POST['centre_name']."','".$_POST['centre_no']."','".$_POST['centre_code']."','".$_POST['alpha_numeric_code']."',
+	'".$_POST['workers_name']."','".$_POST['workers_ac_no']."','".$_POST['bank_name']."','".$_POST['bank_ifsc_code']."',
+	'".$_POST['helpers_name']."','".$_POST['helpers_ac_no']."','".$_POST['helpers_bank_name']."','".$_POST['helpers_ifsc_code']."',
+	'".$_POST['awcmc_ac_no']."','".$_POST['awcmc_bank_name']."','".$_POST['awcmc_ifsc_code']."','".$_POST['president_name']."',
+	'".$_POST['contact_no']."','".$_POST['district']."','".$_POST['block']."','".$_POST['sector']."','".$_POST['village']."',
+	'".$_POST['m_p']."','".$_POST['f_p']."','".$_POST['t_p']."','".$_POST['qa1']."','".$_POST['qa2']."','".$_POST['qa3']."',
+	'".$_POST['qa4']."','".$_POST['qa5']."','".$_POST['qa6']."','".$_POST['qa7']."','".$_POST['qa7_1']."','".$_POST['qa7_2']."',
+	'".$_POST['qa7_3']."','".$_POST['qa7_4']."','".$_POST['qa7_5']."','".$_POST['qa8']."','".$_POST['qa9']."','".$_POST['qa10']."',
+	'".$_POST['qa11']."','".$_POST['qa12a']."','".$_POST['qa12b']."','".$_POST['qa12c']."','".$_POST['qa12d']."','".$_POST['qa8a']."',
+	'".$_POST['qa9a']."','".$_POST['qa10a']."','".$_POST['qa11a']."');";
+	$query = mysql_query($sql);
+	if($query) {
+		$msg = "<div class='message_success'>Record Successfully Added.</div>";
+	} else {
+		echo mysql_error();
+	}
+}
+?>
