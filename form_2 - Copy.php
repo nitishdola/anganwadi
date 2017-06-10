@@ -304,13 +304,10 @@
 								  <label class="col-sm-4 control-label">QA.20)  AW's name and service properly outside</label>
 								  <div class="col-sm-3">
 										<select class="form-control input-sm m-bot15" name="qa20">
-										  <option value="--">--</option>
 										  <option value="NA">NA</option>
-			                              <option value="Yes">Yes</option>
+			                              <option value="--">--</option>
+										  <option value="Yes">Yes</option>
 										  <option value="No" selected="selected">No</option>
-										  <option value="Good">Yes+Good</option>
-									  	  <option value="Average">Average</option>
-									      <option value="Bad">Not Average/Bad</option>
 										</select>
 								  </div>
 								</div>
@@ -320,13 +317,10 @@
 								  <label class="col-sm-4 control-label">QA.21)  Nutrition education posters properly displayed inside </label>
 								  <div class="col-sm-3">
 										<select class="form-control input-sm m-bot15" name="qa21">
-										  <option value="--">--</option>
 										  <option value="NA">NA</option>
-			                              <option value="Yes">Yes</option>
+			                              <option value="--">--</option>
+										  <option value="Yes">Yes</option>
 										  <option value="No" selected="selected">No</option>
-										  <option value="Good">Yes+Good</option>
-									  	  <option value="Average">Average</option>
-									      <option value="Bad">Not Average/Bad</option>
 										</select>
 								  </div>
 								</div>
@@ -335,13 +329,10 @@
 								  <label class="col-sm-4 control-label">QA.22)  Charts/Rolling posters for PSE available &amp; being used </label>
 								  <div class="col-sm-3">
 										<select class="form-control input-sm m-bot15" name="qa22">
-										  <option value="--">--</option>
 										  <option value="NA">NA</option>
+			                              <option value="--">--</option>
 										  <option value="Yes">Yes</option>
 										  <option value="No" selected="selected">No</option>
-										  <option value="Good">Yes+Good</option>
-									  	  <option value="Average">Average</option>
-									      <option value="Bad">Not Average/Bad</option>
 										</select>
 								  </div>
 								</div>
